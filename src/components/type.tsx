@@ -25,3 +25,12 @@ export interface PersonProps{
         last:string
     }
 }
+
+export interface StatusProps{
+    status:'loading' | 'success' | 'error'
+}
+
+export interface HeadingProps{
+    children:string
+}
+
