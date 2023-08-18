@@ -1,8 +1,8 @@
 import React from 'react';
 import { HeadingProps } from './type';
-const Heading = (props:HeadingProps) => {
+const Heading: React.FC<HeadingProps> = ({children}) => {
   return (
-    <div>Heading</div>
+    <div>{children}</div>
   )
 }
 
