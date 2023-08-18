@@ -4,10 +4,10 @@ type OscarProps = {
     children: React.ReactNode
 }
 
-const Oscar = (props:OscarProps) => {
+const Oscar :React.FC<OscarProps> = ({children}) => {
   return (
     <div>
-        Oscar goes to Leonardo Di Caprio
+        {children}
     </div>
   )
 }
