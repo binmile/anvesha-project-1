@@ -1,9 +1,5 @@
 import {useState} from 'react'
-
-type AuthUser = {
-    name:string
-    email:string
-}
+import {AuthUser} from './type'
 
 const User = () => {
   const [user, setUser] = useState<AuthUser | null>(null);

@@ -34,3 +34,7 @@ export interface HeadingProps{
     children:string
 }
 
+export interface AuthUser{
+    name:string
+    email:string
+}
