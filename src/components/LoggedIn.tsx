@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
+
 const LoggedIn = () => {
 const [isLoggedIn, setisLoggedIn] = useState(false);
 const handleLogin = ()=>{
@@ -16,7 +17,7 @@ const handleLogout = ()=>{
         <div>User is {isLoggedIn?'logged in':'logged out'}</div>
     </div>  
 
-  )
+  ) 
 }
 
 export default LoggedIn;
