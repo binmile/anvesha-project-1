@@ -1,18 +1,15 @@
 import "./App.css";
-import {personList} from './components/DummyData';
-import ListAndKeys from "./components/ListAndKeys";
 
-import PersonList from "./components/PersonList";
+import Container from './components/Container';
+
 
 
 
 
 function App() {
-  console.log(personList);
   return (
     <div className="App">
-      
-      <ListAndKeys persons={personList}/>
+      <Container styles={{border:'1px solid black',padding:'1rem'}}/>
     </div>
   );
 }

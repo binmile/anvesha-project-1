@@ -43,3 +43,5 @@ export interface PersonType {
 export interface PersonTypeList{
   persons:Array<PersonType>
 }
+
+

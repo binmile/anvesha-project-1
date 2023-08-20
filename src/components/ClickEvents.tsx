@@ -2,7 +2,7 @@ import React,{MouseEvent} from 'react';
 
 
 const ClickEvents = () => {
-    const handleClick =(event:MouseEvent)=>{
+    const handleClick =(event:MouseEvent<HTMLButtonElement>):void=>{
         console.log('Hey');
         console.log(event);
     }
