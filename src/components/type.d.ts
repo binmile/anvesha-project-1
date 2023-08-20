@@ -45,3 +45,10 @@ export interface PersonTypeList{
 }
 
 
+
+export interface User{
+  id:number,
+  username:string
+}
+
+

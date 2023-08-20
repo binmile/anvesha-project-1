@@ -1,6 +1,7 @@
 import "./App.css";
-
+import {nameList, personList} from './components/DummyData'
 import Container from './components/Container';
+import UseEffect from "./components/UseEffect";
 
 
 
@@ -9,7 +10,7 @@ import Container from './components/Container';
 function App() {
   return (
     <div className="App">
-      <Container styles={{border:'1px solid black',padding:'1rem'}}/>
+     <UseEffect names={nameList}/>
     </div>
   );
 }
