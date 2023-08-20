@@ -30,4 +30,8 @@ src/components/Person.tsx
 src/components/PersonList.tsx
 src/components/Status.tsx
 src/components/type.tsx
+src/components/noteContext.tsx
+src/components/noteState.tsx
 src/components/User.tsx
+src/components/UserContext.tsx
+src/components/ClickEvents.tsx
