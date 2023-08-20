@@ -2,11 +2,11 @@ import React from 'react';
 
 import { GreetProps } from './type'
 
-const Greet = (props: GreetProps) => {
+const Greet : React.FC<GreetProps> = ({name,messageCount,isLoggedIn})=>{
     return (
         <div>
             <h2>
-                {props.isLoggedIn ? `Welcome ${props.name}! You have ${props.messageCount} unread messages ` : `Welcome Guest`}
+                {isLoggedIn ? `Welcome ${name}! You have ${messageCount} unread messages ` : `Welcome Guest`}
             </h2>
         </div>
     )
