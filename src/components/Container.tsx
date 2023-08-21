@@ -1,13 +1,12 @@
 import React from 'react';
 
-type ContainerProps = {
-    styles:React.CSSProperties
-}
+import { ContainerProps } from './type';
 
-const Container = (props:ContainerProps) => {
+
+const Container = ({styles}:ContainerProps) => {
   return (
     <div>
-        <div style={props.styles}>
+        <div style={styles}>
             Text content goes here
         </div>
     </div>

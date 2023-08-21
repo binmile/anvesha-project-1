@@ -52,3 +52,7 @@ export interface User{
 }
 
 
+export interface ContainerProps{
+  styles:React.CSSProperties
+}
+
