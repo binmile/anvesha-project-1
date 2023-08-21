@@ -11,7 +11,7 @@ const ClickEvents = () => {
   return (
     <div>
         <button onClick={handleClick}>Click Me</button>
-    </div>
+    </div>  
 
   )
 }
