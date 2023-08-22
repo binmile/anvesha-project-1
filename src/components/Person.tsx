@@ -4,7 +4,7 @@ import { Name, PersonProps } from "./type";
 
 const Person: React.FC<Name> = ({ first, last }) => {
   return (
-    <div className={style['name']}>
+    <div className={style["name"]}>
       <h1>
         {first} {last}
       </h1>

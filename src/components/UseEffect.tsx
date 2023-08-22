@@ -4,19 +4,18 @@ import { PersonListProps } from "./type";
 const UseEffect: React.FC<PersonListProps> = ({ names }) => {
   const [message, setMessage] = useState<String | null>(null);
 
-  const disappearMessage = ()=>{
-    console.log('disAPp');
+  const disappearMessage = () => {
+    console.log("disAPp");
     setTimeout(() => {
-        console.log('setTimeOur');
-        setMessage("Please have a Look ...");
-      }, 5000);
-  }
+      console.log("setTimeOur");
+      setMessage("Please have a Look ...");
+    }, 5000);
+  };
 
   useEffect(() => {
     setMessage("Hey There, here's the list");
     disappearMessage();
-  },[]);
-
+  }, []);
 
   return (
     <div>
