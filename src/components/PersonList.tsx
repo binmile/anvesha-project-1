@@ -2,12 +2,12 @@ import React from 'react';
 import { PersonListProps } from './type';
 
 
-const PersonList = (props:PersonListProps) => {
+const PersonList : React.FC<PersonListProps> = ({names}) => {
   return (
     <div>
-       {props.names.map((name)=>{
+        {names.map(({first,last})=>{
         return (
-            <h2 key={name.first}>{name.first} {name.last}</h2>
+            <h2 key={first}>{first} {last}</h2>
         )
        })}
     </div>

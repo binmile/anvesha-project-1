@@ -1,13 +1,16 @@
 import React from 'react';
 
-import {  PersonProps } from './type'
+import {  Name, PersonProps } from './type';
 
-const Person = (props:PersonProps) => {
+const Person :React.FC<Name> = ({first, last}) => {
+
+
+  
   return (
     <div>
-        {props.name.first} {props.name.last}
+        {first} {last}
     </div>
-  )
+  );
 }
 
 export default Person; 
