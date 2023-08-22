@@ -22,16 +22,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# /src/components/Greet.tsx
-src/components/Heading.tsx
-src/components/LoggedIn.tsx
-src/components/Oscar.tsx
-src/components/Person.tsx
-src/components/PersonList.tsx
-src/components/Status.tsx
-src/components/type.tsx
-src/components/noteContext.tsx
-src/components/noteState.tsx
-src/components/User.tsx
-src/components/UserContext.tsx
-src/components/ClickEvents.tsx
