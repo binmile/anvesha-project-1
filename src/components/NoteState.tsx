@@ -1,11 +1,7 @@
-import react from 'react';
-import noteContext from './noteContext';
+import React from "react";
 
+const NoteState = () => {
+  return <div>NoteState</div>;
+};
 
-const NoteState = (props)=>{
-    return(
-        <NoteState.provider>
-            {props.children}
-        </NoteState.provider>
-    )
-}
+export default NoteState;

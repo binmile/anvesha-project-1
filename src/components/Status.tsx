@@ -1,15 +1,14 @@
 import React from "react";
-import {StatusProps} from './type'
+import { StatusProps } from "./type";
 
-const Status:React.FC<StatusProps> = ({status}) => {
-  let message:string=""
+const Status: React.FC<StatusProps> = ({ status }) => {
+  let message: string = "";
   if (status === "loading") {
     message = "Loading ...";
   } else if (status === "success") {
     message = "Data fetched successfully!";
-  }
-  else if(status==='error'){
-    message='Error fetching data';
+  } else if (status === "error") {
+    message = "Error fetching data";
   }
   return (
     <div>

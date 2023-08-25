@@ -1,15 +1,11 @@
-import React from 'react';
+import React from "react";
 
 type OscarProps = {
-    children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-const Oscar :React.FC<OscarProps> = ({children}) => {
-  return (
-    <div>
-        {children}
-    </div>
-  )
-}
+const Oscar: React.FC<OscarProps> = ({ children }) => {
+  return <div>{children}</div>;
+};
 
 export default Oscar;
