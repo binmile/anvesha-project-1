@@ -1,6 +1,5 @@
 import React from "react";
-
-import { GreetProps } from "./type";
+import { GreetProps } from "../type";
 
 const Greet: React.FC<GreetProps> = ({ name, messageCount, isLoggedIn }) => {
   return (

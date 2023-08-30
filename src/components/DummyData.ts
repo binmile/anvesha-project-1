@@ -14,6 +14,50 @@ type PersonTypeList = {
   persons: Array<PersonType>;
 };
 
+type Name ={
+  first: string;
+  last: string;
+}
+
+type PersonListProps ={
+  names: Array<Name>;
+}
+
+
+type userDetails= {
+  user:string;
+  
+  profile:string;
+}
+
+
+
+const details:userDetails = {
+  user: "Anvesha",
+  profile: "LearnCoding"
+}
+
+export const personPropsListArray:PersonListProps ={
+  names:[
+    {
+      first: "John",
+      last: "Doe"
+    },
+    {
+      first: "Jane",
+      last: "Doe"
+    },
+    {
+      first: "Alice",
+      last: "Doe"
+    }
+    ,{
+      first: "Benn",
+      last: "Doe"
+    }
+  ]
+}
+
 export const personName: PersonName = {
   first: "Alice",
   last: "Chopra",

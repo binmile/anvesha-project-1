@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { PersonListProps } from "./type";
+import { PersonListProps } from "../type";
 
 const UseEffect: React.FC<PersonListProps> = ({ names }) => {
   const [message, setMessage] = useState<String | null>(null);

@@ -9,6 +9,12 @@ export interface Name {
   last: string;
 }
 
+
+export type userDetails= {
+  user:string;
+  profile:string;
+}
+
 export interface Person {
   name: Name;
 }

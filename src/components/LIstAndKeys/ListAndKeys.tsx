@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PersonProps, PersonType, PersonTypeList } from "./type";
+import { PersonProps, PersonType, PersonTypeList } from "../type";
 
 const ListAndKeys: React.FC<PersonTypeList> = ({ persons }) => {
   return (
