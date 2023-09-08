@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { ChannelContext } from './Context';
 
-const ComponentB = () => {
+const ComponentProfile = () => {
 
   const profile = useContext(ChannelContext);
 
@@ -12,4 +12,4 @@ const ComponentB = () => {
   )
 }
 
-export default ComponentB;
+export default ComponentProfile;

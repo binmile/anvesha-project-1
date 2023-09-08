@@ -1,12 +1,13 @@
 import React, { useReducer } from "react";
+import { INCREMENT, DECREMENT, RESET } from "./utils/constants/Dummydata";
 const initialState = 0;
 const reducer = (state: number, action: string) => {
   switch (action) {
-    case "increment":
+    case INCREMENT:
       return state + 1;
-    case "decrement":
+    case DECREMENT:
       return state - 1;
-    case "reset":
+    case RESET:
       return initialState;
     default:
       return state;
@@ -19,24 +20,32 @@ const ComponentCounterThree = () => {
   return (
     <div>
       <div>Count - {count}</div>
-      <button onClick={()=>{
-        dispatch('increment');
-
-      }}>Increment</button>
-      <button onClick={()=>{
-        dispatch('decrement');
-
-      }}>Decrement</button>
-      <button onClick={()=>{
-        dispatch('reset');
-
-      }}>Reset</button>
-
+      <button
+        onClick={() => {
+          dispatch(INCREMENT);
+        }}
+      >
+        Increment
+      </button>
+      <button
+        onClick={() => {
+          dispatch(DECREMENT);
+        }}
+      >
+        Decrement
+      </button>
+      <button
+        onClick={() => {
+          dispatch(RESET);
+        }}
+      >
+        Reset
+      </button>
 
       <div>
         <div>Count Two - {countTwo}</div>
-        <button onClick={()=>dispatchTwo('increment')}>Increment</button>
-        <button onClick={()=>dispatchTwo('decrement')}>Decrement</button>
+        <button onClick={() => dispatchTwo(INCREMENT)}>Increment</button>
+        <button onClick={() => dispatchTwo(DECREMENT)}>Decrement</button>
       </div>
     </div>
   );
